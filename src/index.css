@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:ivory;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    user-select: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: end;
+    height: 2rem;
+}
+.navbar h1{
+    color:crimson;
+}
+.navbar .navList{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+.navList a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.navbar .active{
+    border-radius: 5px;
+    color:white;
+    background-color: crimson;
+    padding:4px;
+}
+.homeContainer{
+    margin: 4rem 0;
+}
+.blog-frame h2{
+    color:crimson;
+}
+.blog-frame small{
+    color:dimgrey;
+    font-weight: 300;
+    font-size: small;
+}
+.blog-content {
+    margin-top: 2rem;
+    padding: 0 2.5rem 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-content button{
+    width: 75px;
+    height: 35px;
+    background-color: crimson;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.blog-content:hover{
+    box-shadow:0px 1px 1px 1px rgb(199, 195, 195);
+}
+.searchBar{
+    display: flex;
+    gap: 5px;
+}
+.searchBar input,button{
+    border: none;
+    padding-left: 5px;
+    outline: none;
+}
+.searchBar input{
+    border: 2px solid black;
+    width: 200px;
+    border-radius: 5px;
+}
+.searchBar input:hover{
+    outline: none;
+}
+.searchBar button{
+    background-color: crimson;
+    color:#fff;
+    border-radius: 5px;
 }
