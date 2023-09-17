@@ -16,7 +16,6 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    align-items: end;
     height: 2rem;
 }
 .navbar h1{
@@ -40,6 +39,11 @@ body{
 }
 .homeContainer{
     margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.blog-frame{
+    margin-top: 2rem;
 }
 .blog-frame h2{
     color:crimson;
@@ -49,13 +53,13 @@ body{
     font-weight: 300;
     font-size: small;
 }
-.blog-content {
+/*.blog-content {
     margin-top: 2rem;
     padding: 0 2.5rem 0 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+
 .blog-content button{
     width: 75px;
     height: 35px;
@@ -67,6 +71,11 @@ body{
 }
 .blog-content:hover{
     box-shadow:0px 1px 1px 1px rgb(199, 195, 195);
+}
+*/
+.blog-frame:hover{
+    box-shadow:0px 1px 1px 1px rgb(199, 195, 195);
+    transition: all 0.2s linear;
 }
 .searchBar{
     display: flex;
@@ -89,4 +98,9 @@ body{
     background-color: crimson;
     color:#fff;
     border-radius: 5px;
+}
+.error,.loading{
+    text-align: center;
+    padding: 10rem;
+    color:darkgrey;
 }

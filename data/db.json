@@ -1,0 +1,28 @@
+{
+    "blogs":[
+        {
+            "title":"My First Blog",
+            "body":"Hello Guys...",
+            "author":"Mario",
+            "id":1
+        },
+        {
+            "title":"Jakes Journey Begins",
+            "body":"Hello Its Me Jake...",
+            "author":"Jake",
+            "id":2
+        },
+        {
+            "title":"Tales of Antony",
+            "body":"Welcome to my world of Blogs...",
+            "author":"Antony",
+            "id":3
+        },
+        {
+            "title":"Saturday Night Huh!",
+            "body":"Weather is good today!",
+            "author":"John",
+            "id":4
+        }
+    ]
+}
