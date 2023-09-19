@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Navbar = () =>{
     const popUp = (e) => {
         e.preventDefault();
@@ -8,8 +9,8 @@ const Navbar = () =>{
         <nav className="navbar">
             <h1 className="logo">DoneIT</h1>
             <div className="navList">
-                <a href="/">Home</a>
-                <a href="/" className="active" onClick={ popUp }>Create Blog</a>
+                <Link to="/">Home</Link>
+                <Link className="active" onClick={ popUp }>Create Blog</Link>
             </div>
         </nav>
     );
